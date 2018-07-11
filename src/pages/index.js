@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import favicon from "./favicon.png"; 
 
 export default class IndexPage extends React.Component {
   render() {
@@ -8,6 +9,7 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
+       <link rel="shortcut icon" href={favicon} />
       <section className="section">
         <div className="container">
           <div className="content">
